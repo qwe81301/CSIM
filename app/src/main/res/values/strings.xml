@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">            Bike Travel</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_maps3">Map</string>
+
+    <style name="ButtonText">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="ButtonText1">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <string name="title_activity_maps_activity_road">Map</string>
+    <string name="title_activity_scrolling"></string>
+    <string name="large_text">
+
+
+        "9/26星期六，早上六點從聯合大學出發往北，天氣晴，沿著台13甲線往北出發，十點左右抵達新竹世博台灣館，此園區以「山水心燈」為主題，在外觀是高約20公尺的巨型玻璃天燈，天燈內鑲嵌著LED球體，將不斷播放繽紛的臺灣的山水風貌與人文地景，影像透過玻璃天燈呈現。
+中午開始繼續向北騎，溫度32，豔陽下騎得有點辛苦，在兩點前到了大溪的小小兵彩繪牆，小小兵彩繪牆是一個有小小兵彩繪、結合大溪在地特色、冰雪奇緣的拍照好地點。
+看完小小兵，繼續往終點前進，在傍晚六點終於到了大稻埕碼頭，這裡為台灣多項特定節日施放煙火之地點，碼頭邊夕陽美景也常讓不少攝影好手聚集取景。"
+
+
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps_activity_start_site">Map</string>
+    <string name="title_activity_after_plan_site2">AfterPlanSite2</string>
+    <string name="title_activity_maps_activity2_2">Map</string>
+
+</resources>
