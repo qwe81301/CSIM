@@ -24,7 +24,7 @@
             android:layout_width="195dp"
             android:layout_height="fill_parent"
             android:text="拍照"
-            android:id="@+id/button"
+            android:id="@+id/btn1"
             style="@style/ButtonText"
             android:background="@drawable/btn_color"
             android:layout_gravity="center" />

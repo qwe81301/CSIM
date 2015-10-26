@@ -48,12 +48,30 @@ public class MapsActivity3 extends FragmentActivity {
     GoogleMap map;
     ArrayList<LatLng> markerPoints;
 
-    Button btn2 ;
+    Button btn1, btn2 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps3);
+
+        btn1 = (Button) findViewById(R.id.btn1);
+
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+//                Intent intent = new Intent();
+//                intent.setClass(MapsActivity3.this, MapsActivity2_2.class);
+//                startActivity(intent);
+                Intent intent = new Intent(); //調用照相機
+                intent.setAction("android.media.action.STILL_IMAGE_CAMERA");
+                startActivity(intent);
+            }
+        });
+
 
         btn2 = (Button) findViewById(R.id.btn2);
 
@@ -73,9 +91,6 @@ public class MapsActivity3 extends FragmentActivity {
                     }
                 }, 4000); //延遲4秒
 
-//                Intent intent = new Intent();
-//                intent.setClass(MapsActivity3.this, ScrollingActivity.class);
-//                startActivity(intent);
             }
         });
 

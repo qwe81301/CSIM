@@ -152,7 +152,7 @@ public class MapsActivityRoad extends FragmentActivity implements OnMapReadyCall
         DownloadTask downloadTask2 = new DownloadTask();
         downloadTask2.execute(url2);
 
-        String url3 = getDirectionsUrl(24.9033703,121.2689264 , 25.021654,121.535301);
+        String url3 = getDirectionsUrl(24.9033703,121.2689264 , 25.05716,121.5078186);
         DownloadTask downloadTask3 = new DownloadTask();
         downloadTask3.execute(url3);
 

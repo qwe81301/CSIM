@@ -1,8 +1,8 @@
 package com.example.administrator.myapplication_maptest20150925;
 
 import android.content.Intent;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -17,7 +17,10 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivityStartSite extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    Button btn;
+    Button btn1 ,btn2;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +31,30 @@ public class MapsActivityStartSite extends FragmentActivity implements OnMapRead
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        btn1 = (Button) findViewById(R.id.btn1);
 
-        btn = (Button) findViewById(R.id.btn);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent();
+                intent.setClass(MapsActivityStartSite.this, MusicService.class);
+                intent.putExtra("KEY_ISPAUSE", false);
+                startService(intent);
 
 
-        btn.setOnClickListener(new View.OnClickListener() {
+
+            }
+        });
+
+
+
+        btn2 = (Button) findViewById(R.id.btn2);
+
+
+        btn2.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {

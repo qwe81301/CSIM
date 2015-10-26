@@ -50,7 +50,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/btn_grbl"
             style="@style/ButtonText"
-            android:text="123" />
+            android:text="demo"
+            android:textAllCaps="false"/>
 
     </LinearLayout>
 

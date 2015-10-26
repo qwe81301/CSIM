@@ -77,17 +77,35 @@
                 />
         </TableRow >
 
+        <TableRow android:layout_marginTop ="20dp"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/ButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="語音介紹"
+                android:id="@+id/btn1"
+                android:background="@drawable/btn_yellow"
+                 />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="加入行程"
+                android:id="@+id/btn2"
+                style="@style/ButtonText"
+                android:background="@drawable/btn_black"
+                android:layout_gravity="right" />
+
+        </TableRow >
+
 
 
     </TableLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="加入行程"
-        android:id="@+id/btn"
-        style="@style/ButtonText"
-        android:background="@drawable/btn_black"
-        android:layout_gravity="center_horizontal" />
+
 
 </LinearLayout>

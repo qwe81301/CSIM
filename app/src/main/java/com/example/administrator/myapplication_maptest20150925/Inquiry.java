@@ -30,16 +30,16 @@ public class Inquiry extends AppCompatActivity {
             }
         });
 
-//        btn2.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v) {
-//                // TODO Auto-generated method stub
-//                Intent intent = new Intent();
-//                intent.setClass(Inquiry.this, HotSite.class);
-//                startActivity(intent);
-//            }
-//        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent();
+                intent.setClass(Inquiry.this, Inquiry_keyword.class);
+                startActivity(intent);
+            }
+        });
 
         btn3.setOnClickListener(new View.OnClickListener() {
 
