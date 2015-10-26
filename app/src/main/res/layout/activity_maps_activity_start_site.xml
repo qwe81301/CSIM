@@ -33,7 +33,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="苗栗縣苗栗市恭敬里聯大一號"
+                android:text="台北市大安區羅斯福路四段1號"
                 android:id="@+id/textView"
                 android:layout_gravity="left"
                 android:textSize="15sp" />
@@ -51,7 +51,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="24.545001,120.812032"
+                android:text="25.021654,121.535301"
                 android:id="@+id/textView2"
                 android:layout_gravity="left"
                 android:textSize="15sp"
@@ -70,7 +70,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="886-37-381000"
+                android:text="02 3366 3366"
                 android:id="@+id/textView3"
                 android:layout_gravity="left"
                 android:textSize="15sp"

@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class History2 extends AppCompatActivity {
 
-    Button road , picture , noted;
+    Button road, picture, noted;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,6 @@ public class History2 extends AppCompatActivity {
         road = (Button) findViewById(R.id.road);
         picture = (Button) findViewById(R.id.picture);
         noted = (Button) findViewById(R.id.noted);
-
 
 
         road.setOnClickListener(new View.OnClickListener() {

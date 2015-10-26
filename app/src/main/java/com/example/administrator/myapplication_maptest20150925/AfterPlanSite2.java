@@ -24,7 +24,7 @@ public class AfterPlanSite2 extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Intent intent = new Intent();
-                intent.setClass(AfterPlanSite2.this,MapsActivity2.class);
+                intent.setClass(AfterPlanSite2.this,MapsActivity2_2.class);
                 startActivity(intent);
             }
         });

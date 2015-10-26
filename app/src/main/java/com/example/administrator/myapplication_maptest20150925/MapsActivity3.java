@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
@@ -62,9 +63,19 @@ public class MapsActivity3 extends FragmentActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
 
-                Intent intent = new Intent();
-                intent.setClass(MapsActivity3.this, ScrollingActivity.class);
-                startActivity(intent);
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        //延遲後要執行的程式碼
+                        Intent intent = new Intent();
+                        intent.setClass(MapsActivity3.this, ScrollingActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                }, 4000); //延遲4秒
+
+//                Intent intent = new Intent();
+//                intent.setClass(MapsActivity3.this, ScrollingActivity.class);
+//                startActivity(intent);
             }
         });
 
@@ -78,12 +89,14 @@ public class MapsActivity3 extends FragmentActivity {
 
         // Getting Map for the SupportMapFragment
         map = fm.getMap();
-        Marker nuu = map.addMarker(new MarkerOptions().position(NUU).title("聯合大學").snippet(""));
-        Marker spot2 = map.addMarker(new MarkerOptions().position(SPOT2).title("新竹世博台灣館").snippet(""));
-        Marker spot3 = map.addMarker(new MarkerOptions().position(SPOT3).title("桃園大溪小小兵彩繪牆").snippet(""));
-        Marker spot4 = map.addMarker(new MarkerOptions().position(SPOT4).title("台北大稻埕").snippet(""));
+        Marker nuu = map.addMarker(new MarkerOptions().position(NUU).title("國立聯合大學"));
+        Marker spot2 = map.addMarker(new MarkerOptions().position(SPOT2).title("新竹世博台灣館"));
+        Marker spot3 = map.addMarker(new MarkerOptions().position(SPOT3).title("桃園大溪小小兵彩繪牆"));
+        Marker spot4 = map.addMarker(new MarkerOptions().position(SPOT4).title("國立台灣大學"));
 
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(NUU, 16));
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(SPOT2, 9));
+//        map.moveCamera(CameraUpdateFactory.newLatLngZoom(NUU, 16));
+//        map.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
 //            if (map != null) {
 //
@@ -185,7 +198,7 @@ public class MapsActivity3 extends FragmentActivity {
         String url = "https://maps.googleapis.com/maps/api/directions/"
                 + output + "?" + parameters;
 
-        Log.v("tt", url);
+        Log.v("DirectionsUrl", url);
         // 這個是 聯大到新竹世博館 mode是walking
         //https://maps.googleapis.com/maps/api/directions/json?origin=24.545001 , 120.812032&destination=24.8063383,120.9930696&mode=walking
         return url;

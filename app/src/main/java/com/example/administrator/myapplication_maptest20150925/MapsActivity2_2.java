@@ -31,17 +31,20 @@ import java.util.List;
 
 public class MapsActivity2_2 extends FragmentActivity {
 
+
     static final LatLng NUU = new LatLng(24.545001 , 120.812032);
     LatLng SPOT2 = new LatLng(24.8063383,120.9930696);
     LatLng SPOT3 = new LatLng(24.9033703,121.2689264);
-    LatLng SPOT4 = new LatLng(25.05716,121.5078186);
+    LatLng SPOT4 = new LatLng(25.021654, 121.535301);
 
         /*
         24.545001, 120.812032 聯大
         24.8063383,120.9930696 新竹世博台灣館
-        24.885128,121.287747 大溪老街
-        25.05716,121.5078186  台北大稻埕
+        24.9033703,121.2689264 桃園大溪小小兵彩繪牆
+        25.021654, 121.535301  台灣大學
         */
+
+
 
     GoogleMap map;
     ArrayList<LatLng> markerPoints;
@@ -77,12 +80,13 @@ public class MapsActivity2_2 extends FragmentActivity {
 
         // Getting Map for the SupportMapFragment
         map = fm.getMap();
-        Marker nuu = map.addMarker(new MarkerOptions().position(NUU).title("聯合大學").snippet(""));
-        Marker spot2 = map.addMarker(new MarkerOptions().position(SPOT2).title("新竹世博台灣館").snippet(""));
-        Marker spot3 = map.addMarker(new MarkerOptions().position(SPOT3).title("桃園大溪小小兵彩繪牆").snippet(""));
-        Marker spot4 = map.addMarker(new MarkerOptions().position(SPOT4).title("台北大稻埕").snippet(""));
 
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(NUU, 16));
+        Marker nuu = map.addMarker(new MarkerOptions().position(NUU).title("國立聯合大學"));
+        Marker spot2 = map.addMarker(new MarkerOptions().position(SPOT2).title("新竹世博台灣館"));
+        Marker spot3 = map.addMarker(new MarkerOptions().position(SPOT3).title("桃園大溪小小兵彩繪牆"));
+        Marker spot4 = map.addMarker(new MarkerOptions().position(SPOT4).title("國立台灣大學"));
+
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(SPOT4, 13));
 
 //            if (map != null) {
 //
@@ -151,7 +155,7 @@ public class MapsActivity2_2 extends FragmentActivity {
         DownloadTask downloadTask2 = new DownloadTask();
         downloadTask2.execute(url2);
 
-        String url3 = getDirectionsUrl(24.9033703,121.2689264 , 25.05716,121.5078186);
+        String url3 = getDirectionsUrl(24.9033703,121.2689264 , 25.021654, 121.535301);
         DownloadTask downloadTask3 = new DownloadTask();
         downloadTask3.execute(url3);
 

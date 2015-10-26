@@ -68,14 +68,14 @@ public class MapsActivityStartSite extends FragmentActivity implements OnMapRead
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng nuu = new LatLng(24.545001 , 120.812032);//聯合大學
-        mMap.addMarker(new MarkerOptions().position(nuu).title("聯合大學"));
+        LatLng ntu = new LatLng(25.021654,121.535301);//國立台灣大學
+        mMap.addMarker(new MarkerOptions().position(ntu).title("國立台灣大學")); //25.021654,121.535301  國立台灣大學
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(taipei));
 
         // 建立地圖攝影機的位置物件
         CameraPosition cameraPosition =
                 new CameraPosition.Builder()
-                        .target(nuu)
+                        .target(ntu)
                         .zoom(17)
                         .build();
 

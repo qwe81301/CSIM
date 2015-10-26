@@ -38,10 +38,10 @@ public class MapsActivityRoad extends FragmentActivity implements OnMapReadyCall
     LatLng SPOT4 = new LatLng(25.05716,121.5078186);
 
         /*
-        24.545001, 120.812032 聯大
+        24.545001, 120.812032 國立聯合大學
         24.8063383,120.9930696 新竹世博台灣館
         24.9033703,121.2689264 桃園大溪小小兵彩繪牆
-        25.05716,121.5078186  台北大稻埕
+        25.05716,121.5078186  大稻埕
         */
 
     GoogleMap map;
@@ -78,12 +78,12 @@ public class MapsActivityRoad extends FragmentActivity implements OnMapReadyCall
 
         // Getting Map for the SupportMapFragment
         map = fm.getMap();
-        Marker nuu = map.addMarker(new MarkerOptions().position(NUU).title("聯合大學").snippet(""));
-        Marker spot2 = map.addMarker(new MarkerOptions().position(SPOT2).title("新竹世博台灣館").snippet(""));
-        Marker spot3 = map.addMarker(new MarkerOptions().position(SPOT3).title("桃園大溪小小兵彩繪牆").snippet(""));
-        Marker spot4 = map.addMarker(new MarkerOptions().position(SPOT4).title("台北大稻埕").snippet(""));
+        Marker nuu = map.addMarker(new MarkerOptions().position(NUU).title("國立聯合大學"));
+        Marker spot2 = map.addMarker(new MarkerOptions().position(SPOT2).title("新竹世博台灣館"));
+        Marker spot3 = map.addMarker(new MarkerOptions().position(SPOT3).title("桃園大溪小小兵彩繪牆"));
+        Marker spot4 = map.addMarker(new MarkerOptions().position(SPOT4).title("大稻埕"));
 
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(NUU, 16));
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(SPOT2, 9));
 
 //            if (map != null) {
 //
@@ -152,7 +152,7 @@ public class MapsActivityRoad extends FragmentActivity implements OnMapReadyCall
         DownloadTask downloadTask2 = new DownloadTask();
         downloadTask2.execute(url2);
 
-        String url3 = getDirectionsUrl(24.9033703,121.2689264 , 25.05716,121.5078186);
+        String url3 = getDirectionsUrl(24.9033703,121.2689264 , 25.021654,121.535301);
         DownloadTask downloadTask3 = new DownloadTask();
         downloadTask3.execute(url3);
 

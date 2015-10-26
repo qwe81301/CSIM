@@ -8,16 +8,16 @@ import android.widget.Button;
 
 public class Planned extends AppCompatActivity {
 
-    Button btn ;
+    Button btn3 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_planned);
 
-        btn = (Button) findViewById(R.id.btn);
+        btn3 = (Button) findViewById(R.id.btn3);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn3.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {

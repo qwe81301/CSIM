@@ -68,14 +68,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng taipei = new LatLng(25.05716,121.5078186);//大稻埕 煙火節
-        mMap.addMarker(new MarkerOptions().position(taipei).title("大稻埕 煙火節"));
+        LatLng nuu = new LatLng(24.545001,120.812032);//24.545001,120.812032 國立聯合大學
+        mMap.addMarker(new MarkerOptions().position(nuu).title("國立聯合大學"));
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(taipei));
 
         // 建立地圖攝影機的位置物件
         CameraPosition cameraPosition =
                 new CameraPosition.Builder()
-                        .target(taipei)
+                        .target(nuu)
                         .zoom(17)
                         .build();
 

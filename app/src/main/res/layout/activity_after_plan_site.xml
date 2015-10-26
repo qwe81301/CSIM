@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_grbl"
-            android:text="聯合大學" />
+            android:text="國立台灣大學" />
     </LinearLayout>
 
     <LinearLayout
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_grbl"
-            android:text="新竹世博館" />
+            android:text="大溪老街" />
     </LinearLayout>
 
     <LinearLayout
@@ -49,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_grbl"
-            android:text="大溪小小兵塗鴉牆" />
+            android:text="新竹玻璃工藝博物館" />
     </LinearLayout>
 
     <LinearLayout
@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_grbl"
-            android:text="台北大稻埕" />
+            android:text="國立聯合大學" />
     </LinearLayout>
 
     <Button

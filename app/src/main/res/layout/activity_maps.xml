@@ -33,7 +33,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="台北市大同區大稻埕碼頭"
+                android:text="苗栗縣苗栗市恭敬里聯大一號"
                 android:id="@+id/textView"
                 android:layout_gravity="left"
                 android:textSize="18sp" />
@@ -51,7 +51,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="25.05716,121.5078186"
+                android:text="25.021654,121.535301"
                 android:id="@+id/textView2"
                 android:layout_gravity="left"
                 android:textSize="18sp"
@@ -70,7 +70,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="無"
+                android:text="03 738 1000"
                 android:id="@+id/textView3"
                 android:layout_gravity="left"
                 android:textSize="18sp"
