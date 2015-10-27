@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/map"
-        tools:context=".MapsActivity"
+        tools:context=".MapsActivityStartSite"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_weight="0.5" />
 
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView"
                 android:src="@drawable/map_marker"
-                />
+                android:layout_gravity="left" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
                 android:text="苗栗縣苗栗市恭敬里聯大一號"
                 android:id="@+id/textView"
                 android:layout_gravity="left"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
         </TableRow>
 
         <TableRow android:layout_marginTop ="20dp"
@@ -46,16 +46,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView2"
-                android:src="@drawable/map_marker2"/>
+                android:src="@drawable/map_marker2"
+                android:layout_gravity="left" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="25.021654,121.535301"
+                android:text="24.545001,120.812032"
                 android:id="@+id/textView2"
-                android:layout_gravity="left"
-                android:textSize="18sp"
-            />
+                android:textSize="15sp" />
         </TableRow >
 
         <TableRow android:layout_marginTop ="20dp"
@@ -72,22 +71,46 @@
                 android:layout_height="wrap_content"
                 android:text="03 738 1000"
                 android:id="@+id/textView3"
-                android:layout_gravity="left"
-                android:textSize="18sp"
-                 />
+                android:textSize="15sp"
+                />
+        </TableRow >
+
+        <TableRow android:layout_marginTop ="20dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="語音導覽"
+                android:id="@+id/btn1"
+                style="@style/ButtonText"
+                android:background="@drawable/btn_yellow"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="加入行程"
+                android:id="@+id/btn2"
+                style="@style/ButtonText"
+                android:background="@drawable/btn_black" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="暫停導覽"
+                android:id="@+id/btn3"
+                style="@style/ButtonText"
+                android:background="@drawable/btn_yellow" />
+
         </TableRow >
 
 
 
     </TableLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="加入行程"
-        android:id="@+id/btn"
-        style="@style/ButtonText"
-        android:background="@drawable/btn_black"
-        android:layout_gravity="center_horizontal" />
+
 
 </LinearLayout>

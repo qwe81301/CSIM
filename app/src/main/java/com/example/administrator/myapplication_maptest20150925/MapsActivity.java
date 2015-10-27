@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -17,7 +18,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    Button btn;
+    Button btn1 ,btn2,btn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +30,24 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
 
 
-        btn = (Button) findViewById(R.id.btn);
+        btn1 = (Button) findViewById(R.id.btn1);
 
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Toast.makeText(MapsActivity.this, "此景點無導覽資料", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+
+        btn2 = (Button) findViewById(R.id.btn2);
+
+
+        btn2.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -40,13 +55,28 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Intent intent = new Intent();
                 intent.setClass(MapsActivity.this, Input.class);
 
-                Bundle bundle = new Bundle();
-                bundle.putString("sitename","大稻埕");
-                intent.putExtras(bundle);
-                setResult(90, intent); //requestCode需跟A.class的一樣
-                MapsActivity.this.finish();
+//                Bundle bundle = new Bundle();
+//                bundle.putString("sitename", "聯合大學");
+//                intent.putExtras(bundle);
+//                setResult(90, intent); //requestCode需跟A.class的一樣
+//                MapsActivityStartSite.this.finish();
 
                 startActivity(intent);
+            }
+        });
+
+        btn3 = (Button) findViewById(R.id.btn3);
+
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+//                Intent intent = new Intent();
+//                intent.setClass(MapsActivityStartSite.this, MusicService.class);
+//                stopService(intent);
+
             }
         });
 

@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView"
                 android:src="@drawable/map_marker"
-                />
+                android:layout_gravity="left" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -46,16 +46,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView2"
-                android:src="@drawable/map_marker2"/>
+                android:src="@drawable/map_marker2"
+                android:layout_gravity="left" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="25.021654,121.535301"
                 android:id="@+id/textView2"
-                android:layout_gravity="left"
-                android:textSize="15sp"
-                />
+                android:textSize="15sp" />
         </TableRow >
 
         <TableRow android:layout_marginTop ="20dp"
@@ -72,7 +71,6 @@
                 android:layout_height="wrap_content"
                 android:text="02 3366 3366"
                 android:id="@+id/textView3"
-                android:layout_gravity="left"
                 android:textSize="15sp"
                 />
         </TableRow >
@@ -81,12 +79,12 @@
             android:layout_weight="1">
 
             <Button
-                style="@style/ButtonText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="語音介紹"
+                android:text="語音導覽"
                 android:id="@+id/btn1"
+                style="@style/ButtonText"
                 android:background="@drawable/btn_yellow"
                  />
 
@@ -97,8 +95,15 @@
                 android:text="加入行程"
                 android:id="@+id/btn2"
                 style="@style/ButtonText"
-                android:background="@drawable/btn_black"
-                android:layout_gravity="right" />
+                android:background="@drawable/btn_black" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="暫停導覽"
+                android:id="@+id/btn3"
+                style="@style/ButtonText"
+                android:background="@drawable/btn_yellow" />
 
         </TableRow >
 

@@ -37,10 +37,17 @@
 
 
     </string>
+    <string name="large_text2">
+
+
+        "10/31星期六，早上從台灣大學出發往南，天氣不錯。"
+
+
+    </string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_maps_activity_start_site">Map</string>
     <string name="title_activity_after_plan_site2">AfterPlanSite2</string>
     <string name="title_activity_maps_activity2_2">Map</string>
-    <string name="title_activity_scrolling2">ScrollingActivity2</string>
+    <string name="title_activity_scrolling2"></string>
 
 </resources>

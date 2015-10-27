@@ -25,7 +25,7 @@ public class Input extends AppCompatActivity {
         btn1 = (Button) findViewById(R.id.btn1);
         et2 = (EditText)findViewById(R.id.et2);
 
-        btn3 = (Button) findViewById(R.id.button1);
+        //btn3 = (Button) findViewById(R.id.button1);
         btn4 = (Button) findViewById(R.id.button2);
 
 

@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             style="@style/ButtonText"
             android:background="@drawable/btn_green"
-            android:text="儲存行程" />
+            android:text="確認行程" />
     </LinearLayout>
 
 

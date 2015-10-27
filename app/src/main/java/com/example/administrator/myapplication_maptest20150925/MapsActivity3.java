@@ -85,7 +85,7 @@ public class MapsActivity3 extends FragmentActivity {
                     public void run() {
                         //延遲後要執行的程式碼
                         Intent intent = new Intent();
-                        intent.setClass(MapsActivity3.this, ScrollingActivity.class);
+                        intent.setClass(MapsActivity3.this, ScrollingActivity2.class);
                         startActivity(intent);
                         finish();
                     }

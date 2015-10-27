@@ -17,7 +17,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivityStartSite extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    Button btn1 ,btn2;
+    Button btn1 ,btn2,btn3;
 
 
 
@@ -43,9 +43,6 @@ public class MapsActivityStartSite extends FragmentActivity implements OnMapRead
                 intent.setClass(MapsActivityStartSite.this, MusicService.class);
                 intent.putExtra("KEY_ISPAUSE", false);
                 startService(intent);
-
-
-
             }
         });
 
@@ -72,6 +69,20 @@ public class MapsActivityStartSite extends FragmentActivity implements OnMapRead
             }
         });
 
+        btn3 = (Button) findViewById(R.id.btn3);
+
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent();
+                intent.setClass(MapsActivityStartSite.this, MusicService.class);
+                stopService(intent);
+
+            }
+        });
 
     }
 

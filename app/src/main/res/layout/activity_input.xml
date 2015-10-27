@@ -85,6 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="140sp" >
 
+        <!--
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
@@ -93,6 +94,7 @@
             style="@style/ButtonText"
             android:background="@drawable/btn_green"
             android:text="一般規畫" />
+        -->
 
         <Button
             android:id="@+id/button2"
