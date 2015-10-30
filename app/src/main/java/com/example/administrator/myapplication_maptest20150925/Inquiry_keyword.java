@@ -20,7 +20,7 @@ public class Inquiry_keyword extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inquiry_keyword);
 
-        btn = (Button) findViewById(R.id.button2);
+        btn = (Button) findViewById(R.id.btn1);
 
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -29,7 +29,7 @@ public class Inquiry_keyword extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Intent intent = new Intent();
-                intent.setClass(Inquiry_keyword.this, MapsActivity.class);
+                intent.setClass(Inquiry_keyword.this, Input.class);
                 startActivity(intent);
             }
         });

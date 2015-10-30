@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
@@ -48,13 +47,28 @@ public class MapsActivity3 extends FragmentActivity {
     GoogleMap map;
     ArrayList<LatLng> markerPoints;
 
-    Button btn1, btn2 ;
+    Button btn0, btn1, btn2 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps3);
 
+        btn0 = (Button) findViewById(R.id.btn0);
+
+
+        btn0.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent();
+                intent.setClass(MapsActivity3.this, AfterPlanSite2.class);
+                startActivity(intent);
+
+            }
+        });
+/*
         btn1 = (Button) findViewById(R.id.btn1);
 
 
@@ -93,7 +107,7 @@ public class MapsActivity3 extends FragmentActivity {
 
             }
         });
-
+*/
 
         // Initializing
         markerPoints = new ArrayList<LatLng>();

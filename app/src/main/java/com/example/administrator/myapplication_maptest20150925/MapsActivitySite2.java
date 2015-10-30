@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -15,22 +14,21 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
-
+public class MapsActivitySite2 extends FragmentActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
     Button btn1 ,btn2,btn3;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
+        setContentView(R.layout.activity_maps_activity_site2);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
-        getActionBar().setIcon(R.drawable.biketravel);
 
         btn1 = (Button) findViewById(R.id.btn1);
 
@@ -40,7 +38,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Toast.makeText(MapsActivity.this, "此景點無導覽資料", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent();
+                intent.setClass(MapsActivitySite2.this, MusicService.class);
+                intent.putExtra("KEY_ISPAUSE", false);
+                startService(intent);
             }
         });
 
@@ -55,13 +56,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Intent intent = new Intent();
-                intent.setClass(MapsActivity.this, Input.class);
+                intent.setClass(MapsActivitySite2.this, AfterPlanSite2.class);
 
 //                Bundle bundle = new Bundle();
 //                bundle.putString("sitename", "聯合大學");
 //                intent.putExtras(bundle);
 //                setResult(90, intent); //requestCode需跟A.class的一樣
-//                MapsActivityStartSite.this.finish();
+//                MapsActivitySite2.this.finish();
 
                 startActivity(intent);
             }
@@ -75,13 +76,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-//                Intent intent = new Intent();
-//                intent.setClass(MapsActivityStartSite.this, MusicService.class);
-//                stopService(intent);
+                Intent intent = new Intent();
+                intent.setClass(MapsActivitySite2.this, MusicService.class);
+                stopService(intent);
 
             }
         });
-
 
     }
 
@@ -100,14 +100,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng nuu = new LatLng(24.545001,120.812032);//24.545001,120.812032 國立聯合大學
-        mMap.addMarker(new MarkerOptions().position(nuu).title("國立聯合大學"));
+        LatLng ntu = new LatLng(24.9033703,121.2689264);//24.9033703,121.2689264 桃園大溪小小兵彩繪牆 桃園市大溪區仁和路二段60巷17號
+        mMap.addMarker(new MarkerOptions().position(ntu).title("桃園大溪小小兵彩繪牆")); //25.021654,121.535301  國立台灣大學
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(taipei));
 
         // 建立地圖攝影機的位置物件
         CameraPosition cameraPosition =
                 new CameraPosition.Builder()
-                        .target(nuu)
+                        .target(ntu)
                         .zoom(17)
                         .build();
 
@@ -120,3 +120,4 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 //                .color(Color.RED));
     }
 }
+

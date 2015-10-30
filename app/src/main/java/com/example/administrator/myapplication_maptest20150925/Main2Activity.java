@@ -15,6 +15,16 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+
+
+
+        getSupportActionBar().setDisplayUseLogoEnabled(true);//使用logo
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.bt2);
+//
+//        getSupportActionBar().setTitle("Bike Travel");
+//        getSupportActionBar().setDisplayShowTitleEnabled(true);
+
         plan = (Button) findViewById(R.id.plan);
         planned = (Button) findViewById(R.id.planned);
         history = (Button) findViewById(R.id.history);

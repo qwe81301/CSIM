@@ -49,5 +49,6 @@
     <string name="title_activity_after_plan_site2">AfterPlanSite2</string>
     <string name="title_activity_maps_activity2_2">Map</string>
     <string name="title_activity_scrolling2"></string>
+    <string name="title_activity_maps_activity_site2">Map</string>
 
 </resources>

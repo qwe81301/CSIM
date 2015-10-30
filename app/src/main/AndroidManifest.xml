@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.administrator.myapplication_maptest20150925" >
+    package="com.example.administrator.myapplication_maptest20150925">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -8,18 +8,16 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/biketravel"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -35,73 +33,59 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" >
-        </activity>
+            android:icon="@drawable/biketravel"
+            android:label="@string/title_activity_maps"></activity>
         <activity
             android:name=".MapsActivity2"
-            android:label="@string/title_activity_maps2" >
-        </activity>
+            android:label="@string/title_activity_maps2"></activity>
         <activity
             android:name=".MapsActivity3"
-            android:label="@string/title_activity_maps3" >
-        </activity>
-        <activity android:name=".Main2Activity" >
+            android:label="@string/title_activity_maps3"></activity>
+        <activity android:name=".Main2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Input" >
-        </activity>
-        <activity android:name=".HotSite" >
-        </activity>
-        <activity android:name=".Inquiry" >
-        </activity>
-        <activity android:name=".AfterPlanSite" >
-        </activity>
-        <activity android:name=".Planned" >
-        </activity>
-        <activity android:name=".History" >
-        </activity>
-        <activity android:name=".History2" >
-        </activity>
+        <activity android:name=".Input"></activity>
+        <activity android:name=".HotSite"></activity>
+        <activity android:name=".Inquiry"></activity>
+        <activity android:name=".AfterPlanSite"></activity>
+        <activity android:name=".Planned"></activity>
+        <activity android:name=".History"></activity>
+        <activity android:name=".History2"></activity>
         <activity
             android:name=".MapsActivityRoad"
-            android:label="@string/title_activity_maps_activity_road" >
-        </activity>
+            android:label="@string/title_activity_maps_activity_road"></activity>
         <activity
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity android:name=".NearSite" >
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".NearSite"></activity>
         <activity
             android:name=".MapsActivityStartSite"
-            android:label="@string/title_activity_maps_activity_start_site" >
-        </activity>
-        <activity android:name=".GetTravelName" >
-        </activity>
+            android:label="@string/title_activity_maps_activity_start_site"></activity>
+        <activity android:name=".GetTravelName"></activity>
         <activity
             android:name=".AfterPlanSite2"
             android:label="@string/title_activity_after_plan_site2"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".MapsActivity2_2"
-            android:label="@string/title_activity_maps_activity2_2" >
-        </activity>
+            android:label="@string/title_activity_maps_activity2_2"></activity>
         <activity
             android:name=".ScrollingActivity2"
             android:label="@string/title_activity_scrolling2"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity android:name=".Inquiry_keyword" >
-        </activity>
-        <activity android:name=".Map3_Camera" >
-        </activity>
-        <service android:name=".MusicService"></service>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Inquiry_keyword"></activity>
+        <activity android:name=".Map3_Camera"></activity>
+
+        <service android:name=".MusicService" />
+
+        <activity
+            android:name=".MapsActivitySite2"
+            android:label="@string/title_activity_maps_activity_site2"></activity>
     </application>
 
 </manifest>

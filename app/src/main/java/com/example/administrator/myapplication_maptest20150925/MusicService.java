@@ -29,7 +29,7 @@ public class MusicService extends Service {
                         Toast.LENGTH_SHORT).show();
                 return;
             }
-            myplayer.setDataSource(file.getPath());//如果不行就用絕對路徑  第一次試有直接抓到
+            myplayer.setDataSource("/storage/ext_sd/banana.mp3");//如果不行就用絕對路徑  第一次試有直接抓到
             Log.d("music","setDataSource : "+ file.getPath()); ///storage/emulated/0/happy.mp3
             myplayer.setOnCompletionListener(comL);
             myplayer.prepare();

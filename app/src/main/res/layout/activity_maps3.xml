@@ -21,6 +21,15 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="查看景點"
+            android:id="@+id/btn0"
+            style="@style/ButtonText"
+            android:background="@drawable/btn_color"
+            android:layout_gravity="center" />
+        <!--
+        <Button
             android:layout_width="195dp"
             android:layout_height="fill_parent"
             android:text="拍照"
@@ -37,6 +46,7 @@
             style="@style/ButtonText"
             android:background="@drawable/btn_color"
             android:layout_gravity="center" />
+        -->
     </LinearLayout>
 
 
